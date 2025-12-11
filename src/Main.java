@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class LineComparison {
 
     public static void main(String[] args) {
@@ -13,5 +16,19 @@ class LineComparison {
         //UC3
         int result = l2.compareTo(l1);
         System.out.println("\nUC3: Compare Line Lengths → " + result);
+        System.out.println("\nUC4: Sorting Lines by Length");
+
+        List<Line> list = new ArrayList<>();
+        list.add(l1);
+        list.add(l2);
+        list.add(l3);
+        list.add(new Line(new Point(0,0), new Point(6,8)));
+
+        list.sort(null);
+
+        for (Line line : list) {
+            System.out.println(line);
+        }
+
     }
 }
