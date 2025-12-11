@@ -10,5 +10,8 @@ class LineComparison {
         Line l2 = new Line(new Point(0, 0), new Point(3, 4));
         Line l3 = new Line(new Point(1, 1), new Point(4, 5));
         System.out.println("\nUC2: l2 equals l3 → " + l2.equals(l3));
+        //UC3
+        int result = l2.compareTo(l1);
+        System.out.println("\nUC3: Compare Line Lengths → " + result);
     }
 }
